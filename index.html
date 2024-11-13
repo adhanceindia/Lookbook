@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="look3.css" /> -->
+    <title>Lookbook</title>
+   <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1314px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* Add 50px padding on desktop */
+  @media screen and (min-width: 769px) {
+    .container {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .column-grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 14px 0;
+  }
+
+  .column-grid1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .column-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 14px 0;
+    gap: 28px;
+  }
+
+  .overlay-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .column-grid2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .overlay-text a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+  }
+
+  .column-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 0px 14px 0px;
+    gap: 28px;
+  }
+
+  .column-grid3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width:768px) {
+    .column-grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2.5px 0;
+
+    .column-grid2 {
+      padding: 10px 0px;
+      gap: 10px;
+    }
+
+    .column-grid3 {
+      padding: 0px 0px 10px 0px;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width:479px) {
+    .column-grid2 {
+      padding: 2.5px 0px;
+      gap: 5px;
+    }
+
+    .column-grid3 {
+      gap: 5px;
+      padding: 0px 0px 5px 0px;
+    }
+
+    .overlay-text {
+      font-size: xx-small;
+    }
+  }
+</style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-grid1">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/01.jpg?v=1731511209" alt="">
+        <!-- <video class="c-video js-lazy c-card__video is-visible u-cover entered loaded" muted="" playsinline="" loop="" autoplay="" data-ll-status="loaded">
+            <source data-src="https://media.octobre-editions.com/video/upload/awnxx0i8js1et3zsyz72.mp4" type="video/mp4" src="https://media.octobre-editions.com/video/upload/awnxx0i8js1et3zsyz72.mp4">
+            <source data-src="https://media.octobre-editions.com/video/upload/awnxx0i8js1et3zsyz72.webm" type="video/webm" src="https://media.octobre-editions.com/video/upload/awnxx0i8js1et3zsyz72.webm">
+        </video> -->
+      </div>
+
+      <div class="column-grid2">
+        <div class="overlay-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/02.jpg?v=1731511206"
+            alt=""
+            class="u-cover"
+          />
+         
+        </div>
+        <div class="overlay-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/03.jpg?v=1731511207"
+            alt=""
+            class="u-cover"
+          />
+          
+        </div>
+      </div>
+
+        <div class="column-grid2">
+          <div class="overlay-image">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/04.jpg?v=1731511208"
+              alt=""
+            />
+            
+          </div>
+          <div class="overlay-image">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/05.jpg?v=1731511207"
+              alt=""
+            />
+            
+          </div>
+          
+        </div>
+
+        <div class="column-grid1 overlay-image">
+            <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/06.jpg?v=1731511209" alt="">
+            
+        </div>
+
+        <div class="column-grid1 overlay-image">
+            <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/07.jpg?v=1731511207" alt="">
+            
+        </div>
+
+        <div class="column-grid2">
+            <div class="overlay-image">
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/08.jpg?v=1731511207" alt="">
+                
+            </div>
+            <div class="overlay-image">
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/09.jpg?v=1731511209" alt="">
+                
+            </div>
+        </div>
+
+        <div class="column-grid2">
+            <div class="overlay-image">
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/010.jpg?v=1731511206" alt="">
+                
+            </div>
+            <div >
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/011.jpg?v=1731511208" alt="">
+                
+            </div>
+            
+        </div>
+
+        <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/012.jpg?v=1731511207" alt="">
+          
+        </div>
+
+        <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/013.jpg?v=1731511206" alt="">
+         
+        </div>
+
+        <div class="column-grid2">
+            <div class="overlay-image">
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/014.jpg?v=1731511207" alt="">
+                
+            </div>
+            <div class="overlay-image">
+                <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/015.jpg?v=1731511209" alt="">
+               
+            </div>
+        </div>
+
+
+      <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/016.jpg?v=1731511206" alt="">
+          
+      </div>
+
+      <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/03.jpg?v=1731511207" alt="">
+          
+      </div>
+
+      <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/018.jpg?v=1731511209" alt="">
+          
+      </div>
+
+      <div class="column-grid1 overlay-image">
+          <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/019.jpg?v=1731511209" alt="">
+          
+      </div>
+
+      <div class="column-grid2">
+          <div class="overlay-image">
+              <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/020.jpg?v=1731511209" alt="">
+              
+          </div>
+          <div class="overlay-image">
+              <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/021.jpg?v=1731511209" alt="">
+              
+          </div>
+      </div>
+
+
+      <div class="column-grid1 overlay-image">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/022.jpg?v=1731511209" alt="">
+        
+    </div>
+
+    <div class="column-grid2">
+        <div class="overlay-image">
+            <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2213.png?v=1731242421" alt="">
+            
+        </div>
+        <div class="overlay-image">
+            <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2074.png?v=1731242429" alt="">
+            
+        </div>
+    </div>
+
+    <div class="column-grid1 overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2043.png?v=1731242431" alt="">
+      
+  </div>
+
+  <div class="column-grid2">
+    <div class="overlay-image">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-1911.png?v=1731242428" alt="">
+        
+    </div>
+    <div class="overlay-image">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2328.png?v=1731242431" alt="">
+        
+    </div>
+</div>
+
+  <div class="column-grid2">
+    <div class="overlay-image">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2318.png?v=1731242425" alt="">
+        
+    </div>
+    <div class="overlay-image">
+        <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2027.png?v=1731242425" alt="">
+       
+    </div>
+</div>
+
+<div class="column-grid1 overlay-image">
+  <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2334.png?v=1731242429" alt="">
+  
+</div>
+
+<div class="column-grid1 overlay-image">
+  <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-1862.png?v=1731242426" alt="">
+  
+</div>
+
+<div class="column-grid1 overlay-image">
+  <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-1919.png?v=1731242427" alt="">
+  
+</div>
+
+<div class="column-grid1 overlay-image">
+  <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/05.jpg?v=1731511207" alt="">
+  
+</div>
+
+<div class="column-grid2">
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-1721.png?v=1731242431" alt="">
+     
+  </div>
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2230.png?v=1731242431" alt="">
+      
+  </div>
+</div>
+
+<div class="column-grid2">
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2296.png?v=1731242429" alt="">
+      
+  </div>
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-1581.png?v=1731242426" alt="">
+      
+  </div>
+</div>
+
+<div class="column-grid2">
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/I-2296.png?v=1731242429" alt="">
+      
+  </div>
+  <div class="overlay-image">
+      <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/021.jpg?v=1731511209" alt="">
+      
+  </div>
+</div>
+
+<div class="column-grid1 overlay-image">
+  <img src="https://cdn.shopify.com/s/files/1/0700/9635/5566/files/05.jpg?v=1731511207" alt="">
+ 
+</div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
